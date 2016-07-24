@@ -1,0 +1,98 @@
+OUTPUT_ROOT="/home/ems/vishalk"
+HOSTNAME=`hostname -s`
+CURRENT_DATETIME_STR=`date +%Y%m%d_%H%M%S`
+
+# if an argument is provided, use that in place of CURRENT_DATETIME_STR
+if [[ "$#" -ge 1 ]]; then
+    CURRENT_DATETIME_STR=$1
+fi
+
+OUTPUT_DIR="${OUTPUT_ROOT}/${HOSTNAME}/ifos_logs_${CURRENT_DATETIME_STR}/"
+LOG_FILENAME="ifos_logs.osd_mon.${HOSTNAME}.${CURRENT_DATETIME_STR}.tar.gz"
+
+heading() {
+    echo -e "\n$1" | tr [a-z] [A-Z]
+    echo "----------------------------------------------------------------------"
+}
+
+echo "Logs will be collected in ${OUTPUT_DIR}/${LOG_FILENAME}"
+
+heading "Creating an interim directory for collecting logs"
+mkdir -p $OUTPUT_DIR && cd $OUTPUT_DIR
+if [ $? != 0 ] ; then
+    echo "Error: Failed to create ouput directory $OUTPUT_DIR" >&2
+    exit 1
+else
+    echo "Created $OUTPUT_DIR successfully"
+fi
+
+####################################################################
+
+SYSTEM_STATS_CMD_OUTPUT_FILE="system_stats_output.txt"
+CEPH_STATS_CMD_OUTPUT_FILE="ceph_osd_mon_output.txt"
+IOSTAT_CMD_OUTPUT_FILE="iostat_output.txt"
+TOP_CMD_OUTPUT_FILE="top_output.txt"
+
+system_stats_cmds=(
+    "date"
+    "sudo df -h"
+    "sudo uname -a"
+    "sudo lsb_release -a"
+    "sudo dmesg"
+    "mount"
+    "cat /proc/mounts"
+    "ps -ef"
+    "cat /proc/cpuinfo"
+    "cat /proc/meminfo"
+    "vmstat  1 3"
+    "uptime"
+    "pstree"
+    "free"
+    "ifconfig -a"
+)
+
+system_recur_stats_cmds=(
+    "top -b -d 5"
+    "iostat -x 5"
+    "ls"
+)
+
+ceph_stats_cmds=(
+    "sudo ceph df"
+    "sudo ceph report"
+)
+
+recur_stats_output=(
+    "iostat.txt"
+    "top.txt"
+    "ls.txt"
+)
+
+for cmd in "${system_stats_cmds[@]}" ; do
+    echo "# $cmd >> $SYSTEM_STATS_CMD_OUTPUT_FILE"
+    echo -e "\n# $cmd" >> $SYSTEM_STATS_CMD_OUTPUT_FILE
+    eval $cmd >> $SYSTEM_STATS_CMD_OUTPUT_FILE
+done
+
+for cmd in "${ceph_stats_cmds[@]}" ; do
+    echo "# $cmd >> $CEPH_STATS_CMD_OUTPUT_FILE"
+    echo -e "\n# $cmd" >> $CEPH_STATS_CMD_OUTPUT_FILE
+    eval $cmd >> $CEPH_STATS_CMD_OUTPUT_FILE
+done
+
+for ((i=0; i <${#system_recur_stats_cmds[*]}; i++));
+do
+    cmd=${system_recur_stats_cmds[i]}
+    out=${recur_stats_output[i]}
+    echo $cmd
+    echo $out
+    #echo "# cmd >> out
+    #echo -e "\n# cmd" >> $SYSTEM_STATS_CMD_OUTPUT_FILE
+    eval $cmd > $out&
+done
+
+for i in {1..$4}
+do
+    sudo fio --filename="$MOUNT_NAME/1tb.blob" --name=$1.fio --output=$2_$1.log --status-interval=5 --direct=1 --rw=$1 --bs=$2 --numjobs=8 --iodepth=8 --runtime=$3 --norandommap --time_based --ioengine=libaio --group_reporting --thread --filesize=1tb
+done
+
