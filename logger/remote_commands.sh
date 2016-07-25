@@ -54,7 +54,6 @@ system_stats_cmds=(
 system_recur_stats_cmds=(
     "top -b -d 5"
     "iostat -x 5"
-    "ls"
 )
 
 ceph_stats_cmds=(
@@ -63,9 +62,8 @@ ceph_stats_cmds=(
 )
 
 recur_stats_output=(
-    "iostat.txt"
     "top.txt"
-    "ls.txt"
+    "iostat.txt"
 )
 
 for cmd in "${system_stats_cmds[@]}" ; do
@@ -90,9 +88,3 @@ do
     #echo -e "\n# cmd" >> $SYSTEM_STATS_CMD_OUTPUT_FILE
     eval $cmd > $out&
 done
-
-for i in {1..$4}
-do
-    sudo fio --filename="$MOUNT_NAME/1tb.blob" --name=$1.fio --output=$2_$1.log --status-interval=5 --direct=1 --rw=$1 --bs=$2 --numjobs=8 --iodepth=8 --runtime=$3 --norandommap --time_based --ioengine=libaio --group_reporting --thread --filesize=1tb
-done
-

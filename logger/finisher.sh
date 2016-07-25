@@ -9,7 +9,7 @@ if [[ "$#" -ge 1 ]]; then
 fi
 
 OUTPUT_DIR="${OUTPUT_ROOT}/${HOSTNAME}/ifos_logs_${CURRENT_DATETIME_STR}/"
-LOG_FILENAME="ifos_logs.osd_mon.${HOSTNAME}.${CURRENT_DATETIME_STR}.tar.gz"
+LOG_FILENAME="ifos_logs.${HOSTNAME}.${CURRENT_DATETIME_STR}.tar.gz"
 
 heading() {
     echo -e "\n$1" | tr [a-z] [A-Z]
