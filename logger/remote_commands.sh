@@ -54,6 +54,7 @@ system_stats_cmds=(
 system_recur_stats_cmds=(
     "top -b -d 5"
     "iostat -x 5"
+    "sudo collectl -s+m+D+N -oT --iosize -i 5 --verbose"
 )
 
 ceph_stats_cmds=(
@@ -64,6 +65,7 @@ ceph_stats_cmds=(
 recur_stats_output=(
     "top.txt"
     "iostat.txt"
+    "collectl.txt"
 )
 
 for cmd in "${system_stats_cmds[@]}" ; do

@@ -2,21 +2,21 @@
 FIO=fio
 #MOUNT_NAME=/home/ems/kanaujia/dev-tools/logger/test_dir
 
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 4 ]; then
     echo "Illegal number of parameters"
-    echo "./fio_prepare.sh <Block SZ=4k> <INDEX> <MOUNT>" 
+    echo "./fio_prepare.sh <Block SZ=4k> <INDEX> <MOUNT><SIZE>" 
     exit -1
 fi
 
 MOUNT_NAME=$3
-FILESIZE=1gb
+FILESIZE=$4
 FILENAME=$MOUNT_NAME/$FILESIZE.blob
 
 BLKSZ=$1
 INDEX=$2
 
 sudo $FIO --filename=$FILENAME.$INDEX --name=prepare.phase.$INDEX \
---status-interval=5 --direct=1 --rw=write --bs=$1 --numjobs=8 \
---iodepth=8 --norandommap --size=$FILESIZE \
---ioengine=libaio --group_reporting --thread --filesize=$FILESIZE \
---nrfile=1 --randrepeat=0
+--direct=1 --rw=write --bs=$1 \
+--iodepth=8 --size=$FILESIZE --sync=0 \
+--ioengine=libaio --filesize=$FILESIZE \
+--nrfile=1 --randrepeat=0 --refill_buffers

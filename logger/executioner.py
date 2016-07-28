@@ -16,12 +16,12 @@ class FIOWorker(Thread):
     def run(self):
         n = self.args["node"]
         block_sz = self.args["block_sz"]
-        #index = self.args["index"]
         index = self.index
         mount_name = self.args["mount_name"]
+        size = self.args["size"]
 
         if self.args["type"] =="prepare":
-            prepare_fio(n, block_sz, index, mount_name)
+            prepare_fio(n, block_sz, index, mount_name, size)
             return
 
         if self.args["type"] =="execute":
@@ -29,7 +29,8 @@ class FIOWorker(Thread):
             time = self.args["time"]
             log_path = self.args["log_path"]
             num_fio = self.args["num_fio"]
-            execute_fio(n, load, block_sz, time, num_fio, log_path, index, mount_name)
+            execute_fio(n, load, block_sz, time, num_fio, \
+                     log_path, index, mount_name, size)
         else:
             print "Illegal type %s passed" %(self.args["type"])
             sys.exit(-1)
@@ -47,7 +48,7 @@ def ssh_remote_run(client, script):
     sftp.put(script, destination)
     sftp.close()
 
-def prepare_fio_worker(n, block_sz, num_files, mount_name):
+def prepare_fio_worker(n, block_sz, num_files, mount_name, size):
     #ts = time()
     threads = []
 
@@ -56,6 +57,7 @@ def prepare_fio_worker(n, block_sz, num_files, mount_name):
     args["node"] = n
     args["block_sz"] = block_sz
     args["mount_name"] = mount_name
+    args["size"] = size
 
     #for i in [x for x in xrange(int(num_fio)) if x != 0]:
     for i in range(int(num_files)):
@@ -70,7 +72,8 @@ def prepare_fio_worker(n, block_sz, num_files, mount_name):
 
     #print('Took {}'.format(time() - ts))
 
-def execute_fio_worker(n, load, block_sz, time, num_fio, log_path, mount_name):
+def execute_fio_worker(n, load, block_sz, time,
+                       num_fio, log_path, mount_name, size):
     #ts = time()
     threads = []
 
@@ -83,6 +86,7 @@ def execute_fio_worker(n, load, block_sz, time, num_fio, log_path, mount_name):
     args["log_path"] = log_path
     args["num_fio"] = num_fio
     args["mount_name"] = mount_name
+    args["size"] = size
 
     for i in range(int(num_fio)):
         i = i + 1
@@ -135,7 +139,8 @@ def copy_script(node, script_path):
     ssh_remote_run(ssh, script_path)
     ssh.close()
 
-def execute_fio(n, load, block_sz, time, num_fio, log_path, index, mount_name):
+def execute_fio(n, load, block_sz, time, num_fio,
+                log_path, index, mount_name, size):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy()) 
     ssh.load_system_host_keys()
@@ -151,7 +156,7 @@ def execute_fio(n, load, block_sz, time, num_fio, log_path, index, mount_name):
     cmd = sub_cmd + "bash -x  "
     cmd = cmd + new_script_path + " " + load + " " + block_sz + " " + \
             time + " " + num_fio + " " + log_path + " " + index \
-          + " "  + mount_name
+          + " "  + mount_name + " " + size
 
     print "Running fio cmd = " + cmd
 
@@ -165,7 +170,7 @@ def execute_fio(n, load, block_sz, time, num_fio, log_path, index, mount_name):
 
     ssh.close()
 
-def prepare_fio(n, block_sz, index, mount_name):
+def prepare_fio(n, block_sz, index, mount_name, size):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy()) 
     ssh.load_system_host_keys()
@@ -179,7 +184,7 @@ def prepare_fio(n, block_sz, index, mount_name):
  
     cmd = sub_cmd + "bash -x  "
     cmd = cmd + new_script_path + " " + block_sz + " " + index \
-          + " " + mount_name
+          + " " + mount_name + " " + size
 
     print "Running fio cmd = " + cmd
 
@@ -264,14 +269,15 @@ def collect_all_stats(nodes, load, args):
         ssh.close()
 
 if __name__ == "__main__":
-    if len(sys.argv) < 5:
-        print "python executioner.py <fio jobs> <num_job_per_fio> <duration>"
+    if len(sys.argv) < 6:
+        print "python executioner.py <fio thread> <thread_per_fio> <time> <mount> <size=1g>"
         sys.exit(-1)
 
     fio_jobs = sys.argv[1]
     fio_count = sys.argv[2]
     time = sys.argv[3]
     mount_name = sys.argv[4]
+    size = sys.argv[5]
 
     nodes = ["iflab1", "iflab2", "iflab3", "iflab4", "iflab12"]
     client_node = "iflab12"
@@ -284,10 +290,12 @@ if __name__ == "__main__":
     for script in scripts:
         copy_script(client_node, script)
 
-    for blk_sz in block_sz:
-        clean_up_mount_point(client_node)
-        prepare_fio_worker(client_node, blk_sz, fio_jobs, mount_name)
+    prepare_blk_sz = "1mb"
+    clean_up_mount_point(client_node)
+    prepare_fio_worker(client_node, prepare_blk_sz,
+                       fio_jobs, mount_name, size)
 
+    for blk_sz in block_sz:
         for load in load_profile:
             test_suffix_name = load + "_" + blk_sz
             log_path = create_log_path(test_suffix_name)
@@ -298,7 +306,8 @@ if __name__ == "__main__":
 
             #
             remote_collect_start(nodes, args[0])
-            execute_fio_worker(client_node, load, blk_sz, time, fio_jobs, args[1], mount_name)
+            execute_fio_worker(client_node, load, blk_sz,
+                           time, fio_jobs, args[1], mount_name, size)
             #
             remote_collect_stop(nodes, args[0])
             collect_all_stats(nodes, load, args)

@@ -2,9 +2,9 @@
 FIO=fio
 #MOUNT_NAME=/home/ems/kanaujia/dev-tools/logger/test_dir
 
-if [ "$#" -ne 7 ]; then
+if [ "$#" -ne 8 ]; then
     echo "Illegal number of parameters"
-    echo "./fio_runner.sh <LOAD=randread> <Block SZ=4k> <Time=120> <# FIO=8> <LOG PATH> ><INDEX>"
+    echo "./fio_runner.sh <LOAD=randread> <Block SZ=4k> <Time=120> <# FIO=8> <LOG PATH> ><INDEX> <MOUNT><SZ>"
     exit -1
 fi
 
@@ -14,13 +14,16 @@ TIME=$3
 FIO_COUNT=$4
 INDEX=$6
 OUTPUT=$5/$INDEX.fio.log
-MOUNT_NAME= $7
-FILESIZE=1gb
-FILENAME=$MOUNT_NAME/$FILESIZE.blob
+MOUNT_NAME=$7
+FILESIZE=$8
+FILENAME=$MOUNT_NAME/$FILESIZE.blob.$INDEX
 
-echo "Staring FIO number $INDEX"
-sudo $FIO --filename=$FILENAME.$INDEX --name=benchmark.fio.$INDEX \
---output=$OUTPUT --status-interval=5 --direct=1 --rw=$1 \
+echo "Staring FIO runner number $INDEX"
+
+sudo echo 3 | sudo tee /proc/sys/vm/drop_caches && sudo sync
+
+sudo $FIO --filename=$FILENAME --name=benchmark.fio.$INDEX \
+--output=$OUTPUT --direct=1 --rw=$1 \
 --bs=$2 --numjobs=$FIO_COUNT --iodepth=8 --runtime=$3 \
 --size=$FILESIZE --randrepeat=0 --invalidate=1 \
 --time_based --ioengine=libaio \
