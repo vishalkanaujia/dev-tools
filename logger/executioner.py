@@ -28,9 +28,10 @@ class FIOWorker(Thread):
             load = self.args["load"]
             time = self.args["time"]
             log_path = self.args["log_path"]
-            num_fio = self.args["num_fio"]
-            execute_fio(n, load, block_sz, time, num_fio, \
-                     log_path, index, mount_name, size)
+            fio_threads = self.args["fio_threads"]
+
+            execute_fio(n, load, block_sz, time, \
+                     log_path, index, mount_name, size, fio_threads)
         else:
             print "Illegal type %s passed" %(self.args["type"])
             sys.exit(-1)
@@ -72,8 +73,8 @@ def prepare_fio_worker(n, block_sz, num_files, mount_name, size):
 
     #print('Took {}'.format(time() - ts))
 
-def execute_fio_worker(n, load, block_sz, time,
-                       num_fio, log_path, mount_name, size):
+def execute_fio_worker(n, load, block_sz, time, num_fio,
+                       log_path, mount_name, size, fio_threads):
     #ts = time()
     threads = []
 
@@ -84,9 +85,9 @@ def execute_fio_worker(n, load, block_sz, time,
     args["block_sz"] = block_sz
     args["time"] = time
     args["log_path"] = log_path
-    args["num_fio"] = num_fio
     args["mount_name"] = mount_name
     args["size"] = size
+    args["fio_threads"] = fio_threads
 
     for i in range(int(num_fio)):
         i = i + 1
@@ -139,8 +140,8 @@ def copy_script(node, script_path):
     ssh_remote_run(ssh, script_path)
     ssh.close()
 
-def execute_fio(n, load, block_sz, time, num_fio,
-                log_path, index, mount_name, size):
+def execute_fio(n, load, block_sz, time, log_path,
+                index, mount_name, size, fio_threads):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy()) 
     ssh.load_system_host_keys()
@@ -155,7 +156,7 @@ def execute_fio(n, load, block_sz, time, num_fio,
     #cmd = sub_cmd + "bash -x  -x "
     cmd = sub_cmd + "bash -x  "
     cmd = cmd + new_script_path + " " + load + " " + block_sz + " " + \
-            time + " " + num_fio + " " + log_path + " " + index \
+            time + " " + fio_threads + " " + log_path + " " + index \
           + " "  + mount_name + " " + size
 
     print "Running fio cmd = " + cmd
@@ -270,11 +271,11 @@ def collect_all_stats(nodes, load, args):
 
 if __name__ == "__main__":
     if len(sys.argv) < 6:
-        print "python executioner.py <fio thread> <thread_per_fio> <time> <mount> <size=1g>"
+        print "python executioner.py <fio jobs> <fio thread> <time> <mount> <size=1g>"
         sys.exit(-1)
 
     fio_jobs = sys.argv[1]
-    fio_count = sys.argv[2]
+    fio_threads = sys.argv[2]
     time = sys.argv[3]
     mount_name = sys.argv[4]
     size = sys.argv[5]
@@ -290,7 +291,7 @@ if __name__ == "__main__":
     for script in scripts:
         copy_script(client_node, script)
 
-    prepare_blk_sz = "1mb"
+    prepare_blk_sz = "4mb"
     clean_up_mount_point(client_node)
     prepare_fio_worker(client_node, prepare_blk_sz,
                        fio_jobs, mount_name, size)
@@ -306,8 +307,8 @@ if __name__ == "__main__":
 
             #
             remote_collect_start(nodes, args[0])
-            execute_fio_worker(client_node, load, blk_sz,
-                           time, fio_jobs, args[1], mount_name, size)
+            execute_fio_worker(client_node, load, blk_sz, time,
+                           fio_jobs, args[1], mount_name, size, fio_threads)
             #
             remote_collect_stop(nodes, args[0])
             collect_all_stats(nodes, load, args)
