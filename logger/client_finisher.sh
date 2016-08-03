@@ -1,4 +1,3 @@
-
 OUTPUT_ROOT="/home/ems/vishalk"
 HOSTNAME=`hostname -s`
 CURRENT_DATETIME_STR=`date +%Y%m%d_%H%M%S`
@@ -8,15 +7,15 @@ if [[ "$#" -ge 1 ]]; then
     CURRENT_DATETIME_STR=$1
 fi
 
-OUTPUT_DIR="${OUTPUT_ROOT}/${HOSTNAME}/ifos_logs_${CURRENT_DATETIME_STR}/"
-LOG_FILENAME="ifos_logs.${HOSTNAME}.${CURRENT_DATETIME_STR}.tar.gz"
+OUTPUT_DIR="${OUTPUT_ROOT}/${HOSTNAME}/client_logs/${CURRENT_DATETIME_STR}/"
+LOG_FILENAME="client_logs.fio.${HOSTNAME}.${CURRENT_DATETIME_STR}.tar.gz"
 
 heading() {
     echo -e "\n$1" | tr [a-z] [A-Z]
     echo "----------------------------------------------------------------------"
 }
 
-echo "Logs are fetched from ${OUTPUT_DIR}/${LOG_FILENAME}"
+echo "Logs are fetched from ${OUTPUT_DIR}"
 
 heading "Stopping commands and collecting logs"
 if [ ! -d "$OUTPUT_DIR" ]; then
@@ -35,8 +34,7 @@ fi
 ####################################################################
 
 system_recur_stats_cmds=(
-    "sudo killall top"
-    "sudo killall iostat"
+    "sudo killall -s 9 fio"
 )
 
 for ((i=0; i <${#system_recur_stats_cmds[*]}; i++));
@@ -48,10 +46,9 @@ done
 
 #################### CREATE THE FINAL TAR FILE
 heading "Creating tarfile ${LOG_FILENAME}"
-# Moving to parent directory
-cd ../../
-echo $PWD
+cd ../../../
 sudo tar zcvf $LOG_FILENAME $OUTPUT_DIR
 
 #heading "Removing interim output directory ${HOSTNAME}/"
 sudo rm -fr $HOSTNAME
+

@@ -49,10 +49,25 @@ def ssh_remote_run(client, script):
     sftp.put(script, destination)
     sftp.close()
 
-def prepare_fio_worker(n, block_sz, num_files, mount_name, size):
-    #ts = time()
+def prepare_fio_worker(n, block_sz, mount_name, size):
     threads = []
+    index = 1
+    for node in n:
+        worker = prepare_fio_worker_internal(node, block_sz, index,
+                                 mount_name, size)
+        threads += [worker]
+        index = index + 1
 
+    for worker in threads:
+        print "Starting: prepare: node=%s thread = %s" %(node, str(worker))
+        worker.start()
+
+    for t in threads:
+        print "Node=%s: Start waiting for thread %s" %(node, str(t))
+        t.join()
+        print "End waiting for thread %s" %(str(t))
+
+def prepare_fio_worker_internal(n, block_sz, index, mount_name, size):
     args = {}
     args["type"] = "prepare"
     args["node"] = n
@@ -60,24 +75,33 @@ def prepare_fio_worker(n, block_sz, num_files, mount_name, size):
     args["mount_name"] = mount_name
     args["size"] = size
 
-    #for i in [x for x in xrange(int(num_fio)) if x != 0]:
-    for i in range(int(num_files)):
-        i = i + 1
-        args["index"] = str(i)
-        worker = FIOWorker(args, str(i))
-        threads += [worker]
-        worker.start()
+    args["index"] = str(index)
+    worker = FIOWorker(args, str(index))
 
-    for t in threads:
-        t.join()
-
-    #print('Took {}'.format(time() - ts))
+    return worker
 
 def execute_fio_worker(n, load, block_sz, time, num_fio,
                        log_path, mount_name, size, fio_threads):
-    #ts = time()
     threads = []
+    index = 1
+    for node in n:
+        worker = execute_fio_worker_internal(node, load, block_sz, time, index,
+                      log_path, mount_name, size, fio_threads)
+        threads += [worker]
+        index = index + 1
 
+    for worker in threads:
+        worker.start()
+
+    for t in threads:
+        print "Start waiting for thread %s" %(str(t))
+        t.join()
+        print "End waiting for thread %s" %(str(t))
+
+    #print('Took {}'.format(time() - ts))
+
+def execute_fio_worker_internal(n, load, block_sz, time, index,
+                       log_path, mount_name, size, fio_threads):
     args = {}
     args["type"] = "execute"
     args["node"] = n
@@ -88,21 +112,11 @@ def execute_fio_worker(n, load, block_sz, time, num_fio,
     args["mount_name"] = mount_name
     args["size"] = size
     args["fio_threads"] = fio_threads
+    args["index"] = str(index)
 
-    for i in range(int(num_fio)):
-        i = i + 1
-        #for i in [x for x in xrange(int(num_fio)) if x != 0]:
-        args["index"] = str(i)
-        worker = FIOWorker(args, str(i))
-        threads += [worker]
-        worker.start()
+    worker = FIOWorker(args, str(index))
 
-    for t in threads:
-        print "Start waiting for thread %s" %(str(t))
-        t.join()
-        print "End waiting for thread %s" %(str(t))
-
-    #print('Took {}'.format(time() - ts))
+    return worker
 
 def clean_up_mount_point(n):
     ssh = paramiko.SSHClient()
@@ -153,7 +167,6 @@ def execute_fio(n, load, block_sz, time, log_path,
     new_script_path = "/tmp/" + fio_script_path
     sub_cmd = "chmod +x " + new_script_path + ";"
  
-    #cmd = sub_cmd + "bash -x  -x "
     cmd = sub_cmd + "bash -x  "
     cmd = cmd + new_script_path + " " + load + " " + block_sz + " " + \
             time + " " + fio_threads + " " + log_path + " " + index \
@@ -209,13 +222,12 @@ def execute_push_on_a_node(n, remote_script_path, args=None):
     ssh_remote_run(ssh, remote_script_path)
     new_remote_script_path = "/tmp/" + remote_script_path
     sub_cmd = "chmod +x " + new_remote_script_path + ";"
-
     if args is not None:
         cmd = new_remote_script_path + " " + args
     else:
         cmd = new_remote_script_path
 
-    cmd = sub_cmd + "bash -x  " + cmd
+    cmd = sub_cmd + "bash " + cmd
     print "Runing command:" + cmd
 
     stdin, stdout, stderr = ssh.exec_command(cmd)
@@ -234,21 +246,28 @@ def remote_collect_start(nodes, args=None):
         print "Starting collection on node:" + n
         execute_push_on_a_node(n, 'remote_commands.sh', args)
 
+log_cwd = ""
 def create_log_path(args):
     now = datetime.datetime.now()
     unique_str = str(now.year)+ str(now.month)+ str(now.day)+ str(now.hour) + str(now.minute)
-    log_dir_name = os.getcwd() + "/" + args + "/" + args + "_" + str(unique_str)
-    os.system("mkdir -p " + log_dir_name)
+    #log_dir_name = os.getcwd() + "/" + args + "/" + args + "_" + str(unique_str)
+    log_dir_name = args + "_" + str(unique_str)
+    log_cwd = os.getcwd() + "/" + args + "/" + log_dir_name
+    os.system("mkdir -p " + log_cwd)
     return log_dir_name
 
 def remote_collect_stop(nodes, args=None):
     for n in nodes:
         execute_push_on_a_node(n, "finisher.sh", args)
 
+def remote_collect_stop_client(nodes, args=None):
+    for n in nodes:
+        execute_push_on_a_node(n, "client_finisher.sh", args)
+
 def collect_all_stats(nodes, load, args):
     local_loc_dir = args[1]
     test_suffix = args[0]
-
+    log_cwd = os.getcwd() + "/" + args[0] + "/" + args[1]
     print "collect_all_stats: Copying all stats to %s" %(local_loc_dir)
     print args
 
@@ -260,7 +279,32 @@ def collect_all_stats(nodes, load, args):
 
         file_name = "ifos_logs." + n + "." + test_suffix + ".tar.gz"
         remote_loc = "/home/ems/vishalk/" + file_name
-        local_loc = local_loc_dir + "/" + file_name
+        local_loc = log_cwd + "/" + file_name
+
+        sftp = ssh.open_sftp()
+        print "SFTP from %s to %s" %(remote_loc, local_loc)
+        sftp.get(remote_loc, local_loc)
+        sftp.close()
+
+        ssh.close()
+
+def collect_all_stats_client(nodes, load, args):
+    local_loc_dir = args[1]
+    test_suffix = args[0]
+    log_cwd = os.getcwd() + "/" + args[0] + "/" + args[1]
+
+    print "collect_all_stats: Copying all stats to %s" %(local_loc_dir)
+    print args
+
+    for n in nodes:
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.load_system_host_keys()
+        ssh.connect(hostname=n, port=22, username='ems', password='ems123')
+
+        file_name = "client_logs.fio." + n + "." + local_loc_dir + ".tar.gz"
+        remote_loc = "/home/ems/vishalk/" + file_name
+        local_loc = log_cwd + "/" + file_name
 
         sftp = ssh.open_sftp()
         print "SFTP from %s to %s" %(remote_loc, local_loc)
@@ -271,30 +315,43 @@ def collect_all_stats(nodes, load, args):
 
 if __name__ == "__main__":
     if len(sys.argv) < 6:
-        print "python executioner.py <fio jobs> <fio thread> <time> <mount> <size=1g>"
+        print "python executioner.py <runtype=prepare/run> <fio thread> <time> <mount> <size=1g>"
         sys.exit(-1)
 
-    fio_jobs = sys.argv[1]
+    #fio_jobs = sys.argv[1]
+    runtype = sys.argv[1]
     fio_threads = sys.argv[2]
     time = sys.argv[3]
     mount_name = sys.argv[4]
     size = sys.argv[5]
 
-    nodes = ["iflab1", "iflab2", "iflab3", "iflab4", "iflab12"]
-    client_node = "iflab12"
+    #nodes = ["iflab1", "iflab2", "iflab3", "iflab4", "iflab12"]
+    #client_node = ["iflab12", "iflab10", "iflab1", "iflab2", "iflab3", "iflab4"]
+    client_node = ["iflab12", "iflab10"]
+    nodes = ["iflab1"]# "iflab2", "iflab3", "iflab4"]
+
     load_profile = ["randread"]
+    fio_jobs = len(client_node)
+
     #block_sz = ["4k", "64k", "4m"]
     #load_profile = ["read"]
     block_sz = ["4k"]
-
-    scripts = ["fio_prepare.sh", "fio_runner.sh", "fio_cleaner.sh"]
-    for script in scripts:
-        copy_script(client_node, script)
-
     prepare_blk_sz = "4mb"
-    clean_up_mount_point(client_node)
-    prepare_fio_worker(client_node, prepare_blk_sz,
-                       fio_jobs, mount_name, size)
+
+    scripts = ["fio_prepare.sh", "fio_runner.sh", "fio_cleaner.sh", "client_finisher.sh"]
+
+    for node in client_node:
+        for script in scripts:
+            copy_script(node, script)
+
+    if runtype == "prepare":
+        clean_up_mount_point(client_node[0])
+
+        #prepare_client_set = ["iflab12", "iflab10", "iflab1", "iflab2"]
+
+        prepare_fio_worker(client_node, prepare_blk_sz, mount_name, size)
+        print "Prepare is done"
+        exit(0)
 
     for blk_sz in block_sz:
         for load in load_profile:
@@ -306,10 +363,12 @@ if __name__ == "__main__":
             print "Prepared list" + str(args)
 
             #
-            remote_collect_start(nodes, args[0])
+            remote_collect_start(nodes, args[1])
             execute_fio_worker(client_node, load, blk_sz, time,
                            fio_jobs, args[1], mount_name, size, fio_threads)
             #
-            remote_collect_stop(nodes, args[0])
+            remote_collect_stop(nodes, args[1])
+            remote_collect_stop_client(client_node, args[1])
             collect_all_stats(nodes, load, args)
+            collect_all_stats_client(client_node, load, args)
     print "Exiting Main Thread"

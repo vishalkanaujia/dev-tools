@@ -54,7 +54,7 @@ system_stats_cmds=(
 system_recur_stats_cmds=(
     "top -b -d 5"
     "iostat -x 5"
-    "sudo collectl -s+m+D+N -oT --iosize -i 5 --verbose"
+    "ifstat -t -w 5"
 )
 
 ceph_stats_cmds=(
