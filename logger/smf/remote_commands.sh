@@ -1,4 +1,4 @@
-OUTPUT_ROOT="$HOME/ems/vishalk/SMF"
+OUTPUT_ROOT="$HOME/vishalk/SMF"
 HOSTNAME=`hostname -s`
 CURRENT_DATETIME_STR=`date +%Y%m%d_%H%M%S`
 
@@ -18,6 +18,7 @@ heading() {
 echo "Logs will be collected in ${OUTPUT_DIR}"
 
 heading "Creating an interim directory for collecting logs"
+rm -rf $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR && cd $OUTPUT_DIR
 if [ $? != 0 ] ; then
     echo "Error: Failed to create ouput directory $OUTPUT_DIR" >&2
@@ -53,8 +54,10 @@ system_stats_cmds=(
 
 system_recur_stats_cmds=(
     "top -b -d 5"
+    "top -H"
     "iostat -x 5"
     "ifstat -t -w 5"
+    "watch -t -n 120 "ceph -s""
 )
 
 ceph_stats_cmds=(
@@ -64,8 +67,10 @@ ceph_stats_cmds=(
 
 recur_stats_output=(
     "top.txt"
+    "top-h.txt"
     "iostat.txt"
     "collectl.txt"
+    "ceph-s.txt"
 )
 
 for cmd in "${system_stats_cmds[@]}" ; do

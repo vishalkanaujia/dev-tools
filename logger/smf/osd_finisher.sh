@@ -1,4 +1,4 @@
-OUTPUT_ROOT="$HOME/ems/vishalk/SMF"
+OUTPUT_ROOT="$HOME/vishalk/SMF"
 HOSTNAME=`hostname -s`
 CURRENT_DATETIME_STR=`date +%Y%m%d_%H%M%S`
 
@@ -36,6 +36,8 @@ fi
 system_recur_stats_cmds=(
     "sudo killall top"
     "sudo killall iostat"
+    "sudo killall ifstat"
+    "sudo killall watch"
 )
 
 for ((i=0; i <${#system_recur_stats_cmds[*]}; i++));

@@ -1,5 +1,5 @@
-SMF="$HOME/ems/kanaujia/smallfile/smallfile_cli.py "
-OUTPUT_ROOT="$HOME/ems/vishalk/SMF"
+SMF="$HOME/kanaujia/smallfile/smallfile_cli.py "
+OUTPUT_ROOT="$HOME/vishalk/SMF"
 HOSTNAME=`hostname -s`
 CURRENT_DATETIME_STR=`date +%Y%m%d_%H%M%S`
 
@@ -25,6 +25,7 @@ heading() {
 echo "Logs will be collected in ${OUTPUT_DIR}"
 
 heading "Creating an interim directory for collecting logs"
+rm -rf $OUTPUT_DIR
 mkdir -p $OUTPUT_DIR && cd $OUTPUT_DIR
 if [ $? != 0 ] ; then
     echo "Error: Failed to create ouput directory $OUTPUT_DIR" >&2
@@ -38,7 +39,6 @@ echo "Staring FIO runner number $INDEX"
 
 sudo echo 3 | sudo tee /proc/sys/vm/drop_caches && sudo sync
 
-smf_out=$INDEX.smf.log
 op=$1
 hosts=$2
 files=$3
@@ -47,16 +47,14 @@ t=$5
 topdir=$6
 index=$7
 suffx=$8
+smf_out=$index.smf.log
 
 cmd=$SMF
 cmd="$cmd --host-set $hosts"
 cmd="$cmd --files $files --file-size $file_size_kib --threads $t" 
 cmd="$cmd --response-times Y --top $topdir --operation "
 
-#$cmd cleanup
-rm -rf $topdir
-mkdir -v $topdir
-drop_cache
+echo $cmd
 $cmd $op > $smf_out
 
 echo "SMF run completed"
