@@ -1,0 +1,17 @@
+Problem
+Design a URL verifier that decides if a given URL is safe to browse
+or not.
+
+Answer
+URL is of following form:
+[protocol/www, http][address][domain name]
+
+1. Create a Trie structure for each domain.
+2. Root of Trie is domain name itself.
+3. Trie 1: [com]
+4. Trie 2 [org]
+5. Each trie has URL address stored in it.
+
+This solution gives O(k) bound on search time and
+is space optimized.
+
