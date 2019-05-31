@@ -1,0 +1,253 @@
+{
+  "talks": [
+    {
+      "type": "WORKSHOP",
+      "description": "Should I be worried about processor bugs?",
+      "tags": [
+        "cloud",
+        "hardware",
+        "beginner"
+      ],
+      "title": "What exactly is meltdown?"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "How cloud is becoming common in the enterprise",
+      "tags": [
+        "cloud",
+        "enterprise",
+        "intermediate"
+      ],
+      "title": "Rise of Cloud"
+    },
+    {
+      "type": "LIGHTNING",
+      "description": "Simple blockchain introduction in 10 minutes",
+      "tags": [
+        "basics",
+        "blockchain"
+      ],
+      "title": "Blockchain in 10 minutes"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "Confused about Mappers, reducers, & HDFS?",
+      "tags": [
+        "ai",
+        "ml",
+        "data",
+        "beginner"
+      ],
+      "title": "What is Map-Reduce"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "What you need to do to keep your enterprise Safe",
+      "tags": [
+        "security",
+        "enterprise",
+        "advanced"
+      ],
+      "title": "Security Policies in the enterprise"
+    },
+    {
+      "type": "WORKSHOP",
+      "description": "Which category does this belong to?",
+      "tags": [
+        "ai",
+        "beginner"
+      ],
+      "title": "Writing a simple classifier"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "How to make containers work for you",
+      "tags": [
+        "cloud",
+        "intermediate",
+        "containers"
+      ],
+      "title": "What is a container orchestration?"
+    },
+    {
+      "type": "LIGHTNING",
+      "description": "Do it once, do it right",
+      "tags": [
+        "hardware",
+        "IOT",
+        "beginner"
+      ],
+      "title": "How to Solder"
+    },
+    {
+      "type": "WORKSHOP",
+      "description": "CD your way to greatness",
+      "tags": [
+        "cloud",
+        "devops",
+        "microservices",
+        "beginner"
+      ],
+      "title": "Continuous Deployment in the era of microservices"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "Or how to build a wall",
+      "tags": [
+        "security",
+        "intermediate"
+      ],
+      "title": "Make Data Centers Secure Again"
+    },
+    {
+      "type": "LIGHTNING",
+      "description": "B/G Deploy to a live site. In 10 minutes!",
+      "tags": [
+        "basics",
+        "cloud"
+      ],
+      "title": "Blue Green Deploy"
+    },
+    {
+      "type": "KEYNOTE",
+      "description": "Build the greatest CD pipelines with our tool!",
+      "tags": [
+        "keynote",
+        "ci/cd"
+      ],
+      "title": "Design secure CD pipelines using YAN CI"
+    },
+    {
+      "type": "LIGHTNING",
+      "description": "Become an instant command-line Ninja!",
+      "tags": [
+        "beginner",
+        "linux"
+      ],
+      "title": "10 command-line shortcuts you must know"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "Tools and techniques to write secure code",
+      "tags": [
+        "cloud",
+        "distributed_systems",
+        "intermediate"
+      ],
+      "title": "Defensive programming"
+    },
+    {
+      "type": "WORKSHOP",
+      "description": "Internet of Stupid things",
+      "tags": [
+        "cloud",
+        "advanced"
+      ],
+      "title": "How to make a bad cocktail with a single voice command"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "Why is cloudflare so awesome?",
+      "tags": [
+        "cloud",
+        "beginner"
+      ],
+      "title": "What Do CDNs really do?"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "How to prioritize good quality, clean code in the era of instant gratification",
+      "tags": [
+        "development",
+        "tdd",
+        "bdd",
+        "beginner"
+      ],
+      "title": "Testing in the Age of MVP"
+    },
+    {
+      "type": "KEYNOTE",
+      "description": "Help us help you Save time. And money!",
+      "tags": [
+        "enterprise",
+        "keynote"
+      ],
+      "title": "Chatbot assistant to assist your helpdesk"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "New age UX in the Cloudy age",
+      "tags": [
+        "cloud",
+        "beginner"
+      ],
+      "title": "What is conversational Web"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "Why are containers needed?",
+      "tags": [
+        "cloud",
+        "beginner",
+        "container"
+      ],
+      "title": "What is a container?"
+    },
+    {
+      "type": "CLOSING",
+      "description": "Hear from our customers on how we helped them!",
+      "tags": [
+        "cloud",
+        "closing"
+      ],
+      "title": "Customer feedback for ECloud"
+    },
+    {
+      "type": "LIGHTNING",
+      "description": "Downloading something is simple,right? Right?",
+      "tags": [
+        "basics",
+        "beginner"
+      ],
+      "title": "How does WGET work"
+    },
+    {
+      "type": "CLOSING",
+      "description": "We can help your enterprise!",
+      "tags": [
+        "training",
+        "closing"
+      ],
+      "title": "Benefits of using ETraining for your employees"
+    },
+    {
+      "type": "REGULAR_TALK",
+      "description": "Does consensus really need to be distributed?",
+      "tags": [
+        "cloud",
+        "blockchain",
+        "intermediate",
+        "enterprise"
+      ],
+      "title": "Blockchain in the enterprise"
+    },
+    {
+      "type": "WORKSHOP",
+      "description": "Simple things that you can do in the cloud",
+      "tags": [
+        "cloud",
+        "security",
+        "advanced"
+      ],
+      "title": "Secure Your Hypervisor"
+    },
+    {
+      "type": "WORKSHOP",
+      "description": "Write in One DataCenter. Read from another. Simple, right?",
+      "tags": [
+        "cloud",
+        "databases",
+        "intermediate"
+      ]
+  ]
+}

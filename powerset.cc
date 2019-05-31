@@ -19,7 +19,7 @@ void perm(int *arr, int k, int n, int v)
         return;
     }
 
-    for (auto ii = v; ii <= k; ii++) { 
+    for (auto ii = v; ii <= k; ii++) {
         arr[n - 1] = ii;
         perm(arr, k, n - 1, ii + 1);
     }
@@ -37,3 +37,5 @@ int main()
     for (auto m = 1; m <= k; m++)
         perm(arr, k, m, 1);
 }
+
+// this is a test commit for git rebase

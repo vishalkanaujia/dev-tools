@@ -1,0 +1,32 @@
+Day 1 Track 1
+0900 Chatbot assistant to assist your helpdesk KEYNOTE
+0930 Replicate Databases across AZs WORKSHOP
+1030 Secure Your Hypervisor WORKSHOP
+1130 How to make a bad cocktail with a single voice command WORKSHOP
+1230 LUNCH
+1330 Continuous Deployment in the era of microservices WORKSHOP
+1430 Blockchain in the enterprise REGULAR_TALK
+1500 TEA
+1515 Writing a simple classifier WORKSHOP
+1615 What is a container? REGULAR_TALK
+1645 How does WGET work LIGHTNING
+1700 Benefits of using ETraining for your employees CLOSING
+Day 2 Track 1
+0900 Design secure CD pipelines using YAN CI KEYNOTE
+0930 What exactly is meltdown? WORKSHOP
+1030 What is conversational Web REGULAR_TALK
+1100 Testing in the Age of MVP REGULAR_TALK
+1130 What Do CDNs really do? REGULAR_TALK
+1200 Defensive programming REGULAR_TALK
+1230 LUNCH
+1330 Make Data Centers Secure Again REGULAR_TALK
+1400 What is a container orchestration? REGULAR_TALK
+1430 Security Policies in the enterprise REGULAR_TALK
+1500 TEA
+1515 What is Map-Reduce REGULAR_TALK
+1545 Rise of Cloud REGULAR_TALK
+1615 10 command-line shortcuts you must know LIGHTNING
+1625 Blue Green Deploy LIGHTNING
+1635 How to Solder LIGHTNING
+1645 Blockchain in 10 minutes LIGHTNING
+1700 Customer feedback for ECloud CLOSING

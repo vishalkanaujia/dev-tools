@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX_FD	simplefs.h	9;"	d
+MAX_FDS	simplefs.cc	478;"	d	file:
+MAX_FILE_BLOCKS	simplefs.h	7;"	d
+MAX_NAMELEN	simplefs.cc	13;"	d	file:
+MAX_SIZE	simplefs.h	8;"	d
+READ	simplefs.cc	12;"	d	file:
+WRITE	simplefs.cc	11;"	d	file:
+abs_offset	simplefs.h	/^    int abs_offset[4];$/;"	m	struct:fs_meta_t
+allocate_block	simplefs.cc	/^int allocate_block(struct fs_meta_t *fs)$/;"	f
+allocated_blocks	simplefs.h	/^    int allocated_blocks;$/;"	m	struct:superblock_t
+block_size	simplefs.h	/^    int block_size;$/;"	m	struct:superblock_t
+close_file	simplefs.cc	/^int close_file (struct fs_meta_t *fs, int fd)$/;"	f
+create	simplefs.cc	/^int create(struct fs_meta_t *fs, char *filename, int mode)$/;"	f
+create_fs	simplefs.cc	/^int create_fs(struct fs_meta_t **fs, const char *filename, int size, int block_size, int inodes)$/;"	f
+create_new_fd	simplefs.cc	/^int create_new_fd(struct fs_meta_t *fs, int inode, int mode)$/;"	f
+cur_block	simplefs.h	/^    int cur_block;$/;"	m	struct:superblock_t
+data_blocks	simplefs.h	/^    int data_blocks[MAX_SIZE];$/;"	m	struct:inode_t
+entries	simplefs.h	/^    struct fd_info_t *entries;$/;"	m	struct:fd_table_t	typeref:struct:fd_table_t::fd_info_t
+entries	simplefs.h	/^    struct file_table_entry_t *entries;$/;"	m	struct:file_table_t	typeref:struct:file_table_t::file_table_entry_t
+fd	simplefs.h	/^    int fd;$/;"	m	struct:fs_meta_t
+fd_info_t	simplefs.h	/^struct fd_info_t {$/;"	s
+fd_table	simplefs.h	/^    struct fd_table_t *fd_table;$/;"	m	struct:fs_meta_t	typeref:struct:fs_meta_t::fd_table_t
+fd_table_add_entry	simplefs.cc	/^int fd_table_add_entry(struct fs_meta_t *fs, int inode, int mode)$/;"	f
+fd_table_get_entry	simplefs.cc	/^struct fd_info_t* fd_table_get_entry(struct fs_meta_t *fs, int fd)$/;"	f
+fd_table_lookup	simplefs.cc	/^int fd_table_lookup(struct fs_meta_t *fs, int fd)$/;"	f
+fd_table_t	simplefs.h	/^struct fd_table_t {$/;"	s
+file_name	simplefs.h	/^    char file_name[16];$/;"	m	struct:file_table_entry_t
+file_table	simplefs.h	/^    struct file_table_t *file_table;$/;"	m	struct:fs_meta_t	typeref:struct:fs_meta_t::file_table_t
+file_table_add_entry	simplefs.cc	/^int file_table_add_entry(fs_meta_t *fs, char *filename, int inode)$/;"	f
+file_table_entry_t	simplefs.h	/^struct file_table_entry_t {$/;"	s
+file_table_t	simplefs.h	/^struct file_table_t {$/;"	s
+fs	simplefs.cc	/^struct fs_meta_t *fs;$/;"	v	typeref:struct:fs_meta_t
+fs_meta_t	simplefs.h	/^struct fs_meta_t {$/;"	s
+get_data	simplefs.cc	/^int get_data(struct inode_t *ino, char *buf, int offset,$/;"	f
+get_free_fd_slot	simplefs.cc	/^static int get_free_fd_slot(struct fs_meta_t *fs)$/;"	f	file:
+get_next_free_inode	simplefs.cc	/^int get_next_free_inode(fs_meta_t *fs)$/;"	f
+get_next_ino	simplefs.cc	/^int get_next_ino(struct fs_meta_t *fs)$/;"	f
+init_blocks	simplefs.cc	/^int init_blocks(struct fs_meta_t **fs)$/;"	f
+init_fd_table	simplefs.cc	/^void init_fd_table(struct fs_meta_t **fs, int num_entries)$/;"	f
+init_file_table	simplefs.cc	/^void init_file_table(struct fs_meta_t **fs, int num_entries)$/;"	f
+init_inode_table	simplefs.cc	/^void init_inode_table(struct fs_meta_t **fs, int num_entries)$/;"	f
+inode	simplefs.h	/^    int inode;$/;"	m	struct:fd_info_t
+inode	simplefs.h	/^    int inode;$/;"	m	struct:file_table_entry_t
+inode_allocated	simplefs.h	/^    int inode_allocated;$/;"	m	struct:superblock_t
+inode_t	simplefs.h	/^struct inode_t {$/;"	s
+inode_table	simplefs.h	/^    struct inode_table_t *inode_table;$/;"	m	struct:fs_meta_t	typeref:struct:fs_meta_t::inode_table_t
+inode_table_add_entry	simplefs.cc	/^int inode_table_add_entry(fs_meta_t *fs)$/;"	f
+inode_table_offset	simplefs.h	/^    int inode_table_offset;$/;"	m	struct:superblock_t
+inode_table_t	simplefs.h	/^struct inode_table_t {$/;"	s
+inodes	simplefs.h	/^    struct inode_t *inodes;$/;"	m	struct:inode_table_t	typeref:struct:inode_table_t::inode_t
+lock	simplefs.h	/^    pthread_rwlock_t lock;$/;"	m	struct:fd_table_t
+lock	simplefs.h	/^    pthread_rwlock_t lock;$/;"	m	struct:file_table_t
+lock	simplefs.h	/^    pthread_rwlock_t lock;$/;"	m	struct:fs_meta_t
+lock	simplefs.h	/^    pthread_rwlock_t lock;$/;"	m	struct:inode_t
+lock	simplefs.h	/^    pthread_rwlock_t lock;$/;"	m	struct:superblock_t
+lookup_file_table	simplefs.cc	/^int lookup_file_table(struct fs_meta_t *fs, char *filename)$/;"	f
+main	simplefs.cc	/^int main()$/;"	f
+mode	simplefs.h	/^    int mode;$/;"	m	struct:fd_info_t
+num_blocks	simplefs.h	/^    int num_blocks;$/;"	m	struct:inode_t
+num_blocks	simplefs.h	/^    int num_blocks;$/;"	m	struct:superblock_t
+num_entries	simplefs.h	/^    int num_entries;$/;"	m	struct:fd_table_t
+num_entries	simplefs.h	/^    int num_entries;$/;"	m	struct:file_table_t
+num_inodes	simplefs.h	/^    int num_inodes;$/;"	m	struct:superblock_t
+num_used_inode	simplefs.h	/^    int num_used_inode;$/;"	m	struct:superblock_t
+offset	simplefs.h	/^    int offset;$/;"	m	struct:fd_info_t
+offset_to_block	simplefs.cc	/^int offset_to_block(struct inode_t *ino, int offset, int len,$/;"	f
+open_file	simplefs.cc	/^int open_file(struct fs_meta_t *fs, char *filename, int mode)$/;"	f
+owner	simplefs.h	/^    int owner;$/;"	m	struct:inode_t
+populate_superblock	simplefs.cc	/^void populate_superblock(struct fs_meta_t **fs, $/;"	f
+read_data	simplefs.cc	/^int read_data(struct fs_meta_t *fs, struct inode_t *ino, int block_id,$/;"	f
+read_file	simplefs.cc	/^int read_file(struct fs_meta_t *fs, int fd, char *buf, int blen)$/;"	f
+sb	simplefs.h	/^    struct superblock_t *sb;$/;"	m	struct:fs_meta_t	typeref:struct:fs_meta_t::superblock_t
+search_for_free_slot	simplefs.cc	/^int search_for_free_slot(struct fd_table_t *fdt)$/;"	f
+seek_file	simplefs.cc	/^int seek_file(struct fs_meta_t *fs, int fd, int offset)$/;"	f
+size	simplefs.h	/^    int size;$/;"	m	struct:inode_t
+superblock_t	simplefs.h	/^struct superblock_t {$/;"	s
+update_fd_table	simplefs.cc	/^int update_fd_table(struct fs_meta_t *fs, int fd)$/;"	f
+update_ondisk	simplefs.cc	/^int update_ondisk(struct fs_meta_t *fs, void *src, int offset, int len)$/;"	f
+valid	simplefs.h	/^    int valid;$/;"	m	struct:fd_info_t
+write_data	simplefs.cc	/^int write_data(struct fs_meta_t *fs, struct inode_t *ino, int block_id,$/;"	f
+write_file	simplefs.cc	/^int write_file(struct fs_meta_t *fs, int fd, char *buf, int blen)$/;"	f
