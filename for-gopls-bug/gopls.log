@@ -1,0 +1,2316 @@
+[Info  - 11:19:31 PM] 2020/12/11 23:19:31 go env for /Users/vishal/go-code
+(root /Users/vishal/go-code)
+(go version go version go1.14.13 darwin/amd64)
+(valid build configuration = false)
+(build flags: [])
+GOINSECURE=
+GONOSUMDB=bitbucket.org
+GOPATH=/Users/vishal/go/
+GOSUMDB=sum.golang.org
+GOMODCACHE=
+GOPROXY=https://proxy.golang.org,direct
+GOROOT=/usr/local/go
+GOFLAGS=
+GOMOD=
+GONOPROXY=bitbucket.org
+GO111MODULE=
+GOCACHE=/Users/vishal/Library/Caches/go-build
+GOPRIVATE=bitbucket.org
+
+
+[Info  - 11:19:31 PM] 2020/12/11 23:19:31 go/packages.Load
+	snapshot=0
+	directory=/Users/vishal/go-code
+	query=[./ builtin]
+	packages=2
+
+[Info  - 11:19:31 PM] 2020/12/11 23:19:31 go/packages.Load
+	snapshot=0
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:19:47 PM] 2020/12/11 23:19:47 go/packages.Load
+	snapshot=0
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:19:47 PM] 2020/12/11 23:19:47 go/packages.Load
+	snapshot=1
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:19:48 PM] 2020/12/11 23:19:48 go/packages.Load
+	snapshot=1
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:19:48 PM] 2020/12/11 23:19:48 go/packages.Load
+	snapshot=1
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:19:48 PM] 2020/12/11 23:19:48 go/packages.Load
+	snapshot=1
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:19:48 PM] 2020/12/11 23:19:48 go/packages.Load
+	snapshot=1
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+	packages=1
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:19:50 PM] 2020/12/11 23:19:50 go/packages.Load
+	snapshot=2
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:19:53 PM] 2020/12/11 23:19:53 go/packages.Load
+	snapshot=3
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+	packages=1
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:19:54 PM] 2020/12/11 23:19:54 go/packages.Load
+	snapshot=3
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+	packages=1
+
+[Info  - 11:20:18 PM] 2020/12/11 23:20:18 background imports cache refresh starting
+
+[Info  - 11:20:18 PM] 2020/12/11 23:20:18 background refresh finished after 80.525691ms
+
+[Info  - 11:20:27 PM] 2020/12/11 23:20:27 go/packages.Load
+	snapshot=4
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=0
+
+[Error - 11:20:27 PM] 2020/12/11 23:20:27 failed to compute document links: no packages returned: packages.Load error
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Info  - 11:20:27 PM] 2020/12/11 23:20:27 go/packages.Load
+	snapshot=4
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=0
+
+[Error - 11:20:27 PM] 2020/12/11 23:20:27 reloadOrphanedFiles: failed to load: no packages returned: packages.Load error
+	query=[file:///Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:20:28 PM] 2020/12/11 23:20:28 go/packages.Load
+	snapshot=4
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=0
+
+[Info  - 11:20:28 PM] 2020/12/11 23:20:28 go/packages.Load
+	snapshot=5
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=0
+
+[Error - 11:20:28 PM] 2020/12/11 23:20:28 reloadOrphanedFiles: failed to load: no packages returned: packages.Load error
+	query=[file:///Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:20:28 PM] 2020/12/11 23:20:28 go/packages.Load
+	snapshot=5
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=0
+
+[Info  - 11:20:30 PM] 2020/12/11 23:20:30 go/packages.Load
+	snapshot=6
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:20:30 PM] 2020/12/11 23:20:30 go/packages.Load
+	snapshot=6
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:20:30 PM] 2020/12/11 23:20:30 go/packages.Load
+	snapshot=6
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:20:30 PM] 2020/12/11 23:20:30 go/packages.Load
+	snapshot=6
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:20:30 PM] 2020/12/11 23:20:30 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Error - 11:20:31 PM] 2020/12/11 23:20:31 imports fixes: AllImportsFixes: 1:9: expected 'IDENT', found 'EOF'
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:20:31 PM] 2020/12/11 23:20:31 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Error - 11:20:31 PM] 2020/12/11 23:20:31 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Error - 11:20:31 PM] 2020/12/11 23:20:31 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Error - 11:20:31 PM] 2020/12/11 23:20:31 imports fixes: AllImportsFixes: 1:9: expected 'IDENT', found 'EOF'
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:20:33 PM] 2020/12/11 23:20:33 go/packages.Load
+	snapshot=11
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:20:33 PM] 2020/12/11 23:20:33 go/packages.Load
+	snapshot=11
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:20:33 PM] 2020/12/11 23:20:33 go/packages.Load
+	snapshot=11
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+	packages=1
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:20:34 PM] 2020/12/11 23:20:34 go/packages.Load
+	snapshot=11
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Error - 11:20:49 PM] 2020/12/11 23:20:49 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:2:5: expected '(', found 'EOF' (and 4 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=2
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=2
+
+[Info  - 11:21:01 PM] 2020/12/11 23:21:01 go/packages.Load
+	snapshot=31
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=32
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=32
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=32
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=32
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=33
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=33
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=33
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:02 PM] 2020/12/11 23:21:02 go/packages.Load
+	snapshot=33
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:04 PM] 2020/12/11 23:21:04 background imports cache refresh starting
+
+[Info  - 11:21:04 PM] 2020/12/11 23:21:04 background refresh finished after 49.952934ms
+
+[Error - 11:21:04 PM] 2020/12/11 23:21:04 no signature help: cannot get type for Fun *ast.SelectorExpr (&{color Cyan})
+	position={5 11}
+
+[Error - 11:21:18 PM] 2020/12/11 23:21:18 no signature help: cannot get type for Fun *ast.SelectorExpr (&{color Cyan})
+	position={5 25}
+
+[Error - 11:21:26 PM] 2020/12/11 23:21:26 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:4:1: expected declaration, found impor
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:26 PM] 2020/12/11 23:21:26 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:5:1: expected 'STRING', found 'func' (and 1 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:28 PM] 2020/12/11 23:21:28 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:4:8: invalid import path: ""
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:28 PM] 2020/12/11 23:21:28 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:4:8: invalid import path: ""
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:28 PM] Request textDocument/formatting failed.
+  Message: 4:8: invalid import path: ""
+  Code: 0 
+[Info  - 11:21:32 PM] 2020/12/11 23:21:32 go/packages.Load
+	snapshot=69
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:32 PM] 2020/12/11 23:21:32 go/packages.Load
+	snapshot=69
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:32 PM] 2020/12/11 23:21:32 go/packages.Load
+	snapshot=69
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:21:32 PM] 2020/12/11 23:21:32 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=69
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=69
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:21:33 PM] 2020/12/11 23:21:33 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=69
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=69
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=70
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=70
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=70
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=70
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=70
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=70
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:33 PM] 2020/12/11 23:21:33 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=70
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=71
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=71
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:33 PM] 2020/12/11 23:21:33 go/packages.Load
+	snapshot=71
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=71
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=71
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:34 PM] 2020/12/11 23:21:34 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=71
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=71
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=71
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=71
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=72
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:34 PM] 2020/12/11 23:21:34 go/packages.Load
+	snapshot=72
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 background imports cache refresh starting
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=72
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=72
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:35 PM] 2020/12/11 23:21:35 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=72
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=72
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=72
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:21:35 PM] 2020/12/11 23:21:35 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 background refresh finished after 161.560122ms
+
+[Error - 11:21:35 PM] Request textDocument/codeAction failed.
+  Message: context canceled
+  Code: 0 
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Error - 11:21:35 PM] 2020/12/11 23:21:35 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=73
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=73
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=74
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=74
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=74
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:35 PM] 2020/12/11 23:21:35 go/packages.Load
+	snapshot=74
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=74
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=74
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:36 PM] 2020/12/11 23:21:36 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=74
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=74
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=74
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:36 PM] 2020/12/11 23:21:36 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=75
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=75
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=76
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:36 PM] 2020/12/11 23:21:36 go/packages.Load
+	snapshot=76
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=76
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=76
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:37 PM] 2020/12/11 23:21:37 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=76
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=76
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=76
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=77
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=77
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=77
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=77
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:37 PM] 2020/12/11 23:21:37 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=77
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=77
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=77
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Error - 11:21:37 PM] 2020/12/11 23:21:37 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=78
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=78
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:37 PM] 2020/12/11 23:21:37 go/packages.Load
+	snapshot=79
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:21:37 PM] 2020/12/11 23:21:37 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=79
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:38 PM] 2020/12/11 23:21:38 go/packages.Load
+	snapshot=79
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:38 PM] 2020/12/11 23:21:38 go/packages.Load
+	snapshot=80
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:38 PM] 2020/12/11 23:21:38 go/packages.Load
+	snapshot=80
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=80
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=80
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:39 PM] 2020/12/11 23:21:39 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=80
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=80
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=80
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=81
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=81
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=81
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=81
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Error - 11:21:39 PM] 2020/12/11 23:21:39 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=81
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=81
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=81
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=82
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=82
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=82
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=82
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:39 PM] 2020/12/11 23:21:39 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=82
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=82
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=82
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=83
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=83
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=83
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:39 PM] 2020/12/11 23:21:39 no highlight: getting file for Highlight: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	URI=file:///Users/vishal/go-code/mymodtest/just_test.go
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=83
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:39 PM] 2020/12/11 23:21:39 go/packages.Load
+	snapshot=83
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:21:39 PM] 2020/12/11 23:21:39 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=83
+	directory=file:///Users/vishal/go-code
+
+[Error - 11:21:40 PM] Request textDocument/codeAction failed.
+  Message: context canceled
+  Code: 0 
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=83
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:40 PM] 2020/12/11 23:21:40 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=84
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:40 PM] 2020/12/11 23:21:40 go/packages.Load
+	snapshot=84
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:41 PM] 2020/12/11 23:21:41 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=85
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=85
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=86
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=86
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=86
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=86
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=86
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:41 PM] 2020/12/11 23:21:41 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=86
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:41 PM] 2020/12/11 23:21:41 go/packages.Load
+	snapshot=86
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=86
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=86
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=87
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=87
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=87
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Error - 11:21:42 PM] 2020/12/11 23:21:42 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=87
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=87
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=88
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=88
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:42 PM] 2020/12/11 23:21:42 go/packages.Load
+	snapshot=88
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=88
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=88
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=88
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:43 PM] 2020/12/11 23:21:43 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=88
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=88
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=88
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:21:43 PM] 2020/12/11 23:21:43 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=89
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:43 PM] 2020/12/11 23:21:43 go/packages.Load
+	snapshot=89
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:44 PM] 2020/12/11 23:21:44 go/packages.Load
+	snapshot=90
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:44 PM] 2020/12/11 23:21:44 go/packages.Load
+	snapshot=90
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:44 PM] 2020/12/11 23:21:44 go/packages.Load
+	snapshot=90
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:44 PM] 2020/12/11 23:21:44 go/packages.Load
+	snapshot=90
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:44 PM] 2020/12/11 23:21:44 go/packages.Load
+	snapshot=90
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:44 PM] 2020/12/11 23:21:44 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=90
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:47 PM] 2020/12/11 23:21:47 go/packages.Load
+	snapshot=90
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:47 PM] 2020/12/11 23:21:47 go/packages.Load
+	snapshot=90
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:21:47 PM] 2020/12/11 23:21:47 go/packages.Load
+	snapshot=90
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Error - 11:21:47 PM] 2020/12/11 23:21:47 no signature help: cannot find an enclosing function
+	position={3 8}
+
+[Error - 11:21:47 PM] 2020/12/11 23:21:47 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:5:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:21:47 PM] 2020/12/11 23:21:47 go/packages.Load
+	snapshot=91
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:47 PM] 2020/12/11 23:21:47 go/packages.Load
+	snapshot=91
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:47 PM] 2020/12/11 23:21:47 go/packages.Load
+	snapshot=91
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Error - 11:21:47 PM] 2020/12/11 23:21:47 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=91
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:48 PM] 2020/12/11 23:21:48 go/packages.Load
+	snapshot=91
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:48 PM] 2020/12/11 23:21:48 go/packages.Load
+	snapshot=92
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:21:48 PM] 2020/12/11 23:21:48 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=92
+	directory=file:///Users/vishal/go-code
+
+[Error - 11:21:48 PM] 2020/12/11 23:21:48 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:6:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:49 PM] 2020/12/11 23:21:49 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:6:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:50 PM] 2020/12/11 23:21:50 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:6:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:21:50 PM] 2020/12/11 23:21:50 go/packages.Load
+	snapshot=92
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:50 PM] 2020/12/11 23:21:50 go/packages.Load
+	snapshot=93
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:21:50 PM] 2020/12/11 23:21:50 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=93
+	directory=file:///Users/vishal/go-code
+
+[Error - 11:21:51 PM] 2020/12/11 23:21:51 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:7:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Error - 11:21:51 PM] Request textDocument/formatting failed.
+  Message: 7:1: expected 'STRING', found 'func' (and 1 more errors)
+  Code: 0 
+[Info  - 11:21:51 PM] 2020/12/11 23:21:51 go/packages.Load
+	snapshot=93
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:51 PM] 2020/12/11 23:21:51 go/packages.Load
+	snapshot=94
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:21:51 PM] 2020/12/11 23:21:51 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=94
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:51 PM] 2020/12/11 23:21:51 go/packages.Load
+	snapshot=94
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:51 PM] 2020/12/11 23:21:51 go/packages.Load
+	snapshot=95
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:21:51 PM] 2020/12/11 23:21:51 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=95
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:56 PM] 2020/12/11 23:21:56 go/packages.Load
+	snapshot=95
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:56 PM] 2020/12/11 23:21:56 go/packages.Load
+	snapshot=96
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:21:56 PM] 2020/12/11 23:21:56 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=96
+	directory=file:///Users/vishal/go-code
+
+[Error - 11:21:56 PM] 2020/12/11 23:21:56 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:6:2: invalid import path: "" (and 4 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=96
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=97
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=97
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=97
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:21:57 PM] 2020/12/11 23:21:57 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:7:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=97
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=97
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:57 PM] 2020/12/11 23:21:57 go/packages.Load
+	snapshot=97
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:57 PM] 2020/12/11 23:21:57 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=97
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=97
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=97
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=98
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=98
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=98
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=98
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=99
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:58 PM] 2020/12/11 23:21:58 go/packages.Load
+	snapshot=99
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=99
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=99
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Error - 11:21:59 PM] 2020/12/11 23:21:59 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=99
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:21:59 PM] 2020/12/11 23:21:59 no completions found: getting file for Completion: no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments (package completions: invalid position for package completion: cursor after expression): no parsed file for file:///Users/vishal/go-code/mymodtest/just_test.go in command-line-arguments
+	position={5 6}
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Error - 11:21:59 PM] 2020/12/11 23:21:59 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=100
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=100
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=101
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=101
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=101
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=101
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:21:59 PM] 2020/12/11 23:21:59 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=101
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=101
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=101
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=102
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=102
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=102
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:21:59 PM] 2020/12/11 23:21:59 go/packages.Load
+	snapshot=102
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=102
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=102
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Error - 11:22:00 PM] 2020/12/11 23:22:00 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=102
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=102
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=102
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=103
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=103
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=103
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=103
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Error - 11:22:00 PM] 2020/12/11 23:22:00 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=103
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=103
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=103
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=104
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:00 PM] 2020/12/11 23:22:00 go/packages.Load
+	snapshot=104
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=104
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=104
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Error - 11:22:01 PM] 2020/12/11 23:22:01 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=104
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=104
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=104
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=105
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=105
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=105
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=105
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Error - 11:22:01 PM] 2020/12/11 23:22:01 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=105
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=105
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=105
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Error - 11:22:01 PM] 2020/12/11 23:22:01 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=106
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=106
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Error - 11:22:01 PM] 2020/12/11 23:22:01 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:7:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=107
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=107
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=107
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:22:01 PM] 2020/12/11 23:22:01 imports fixes: AllImportsFixes: /Users/vishal/go-code/mymodtest/just_test.go:7:1: expected 'STRING', found 'func' (and 3 more errors)
+	file="/Users/vishal/go-code/mymodtest/just_test.go"
+
+[Info  - 11:22:01 PM] 2020/12/11 23:22:01 go/packages.Load
+	snapshot=107
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=107
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=1
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=107
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:22:02 PM] 2020/12/11 23:22:02 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=107
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=107
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=107
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=108
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=108
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:02 PM] 2020/12/11 23:22:02 go/packages.Load
+	snapshot=108
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Error - 11:22:02 PM] 2020/12/11 23:22:02 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=108
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:03 PM] 2020/12/11 23:22:03 go/packages.Load
+	snapshot=108
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:03 PM] 2020/12/11 23:22:03 go/packages.Load
+	snapshot=108
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:22:03 PM] 2020/12/11 23:22:03 go/packages.Load
+	snapshot=108
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:22:03 PM] 2020/12/11 23:22:03 go/packages.Load
+	snapshot=109
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:03 PM] 2020/12/11 23:22:03 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=109
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:03 PM] 2020/12/11 23:22:03 go/packages.Load
+	snapshot=109
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:04 PM] 2020/12/11 23:22:04 go/packages.Load
+	snapshot=110
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:04 PM] 2020/12/11 23:22:04 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=110
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 go/packages.Load
+	snapshot=110
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 go/packages.Load
+	snapshot=111
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:05 PM] 2020/12/11 23:22:05 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=111
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 go/packages.Load
+	snapshot=111
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 go/packages.Load
+	snapshot=112
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:05 PM] 2020/12/11 23:22:05 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=112
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 go/packages.Load
+	snapshot=112
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 go/packages.Load
+	snapshot=113
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:05 PM] 2020/12/11 23:22:05 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=113
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 background imports cache refresh starting
+
+[Info  - 11:22:05 PM] 2020/12/11 23:22:05 background refresh finished after 55.458772ms
+
+[Info  - 11:22:07 PM] 2020/12/11 23:22:07 go/packages.Load
+	snapshot=113
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:07 PM] 2020/12/11 23:22:07 go/packages.Load
+	snapshot=114
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:07 PM] 2020/12/11 23:22:07 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=114
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:08 PM] 2020/12/11 23:22:08 go/packages.Load
+	snapshot=114
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:08 PM] 2020/12/11 23:22:08 go/packages.Load
+	snapshot=115
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:08 PM] 2020/12/11 23:22:08 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=115
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:10 PM] 2020/12/11 23:22:10 go/packages.Load
+	snapshot=115
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:10 PM] 2020/12/11 23:22:10 go/packages.Load
+	snapshot=116
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:10 PM] 2020/12/11 23:22:10 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=116
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:10 PM] 2020/12/11 23:22:10 go/packages.Load
+	snapshot=116
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:22:11 PM] 2020/12/11 23:22:11 go/packages.Load
+	snapshot=117
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Error - 11:22:11 PM] 2020/12/11 23:22:11 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=117
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:22:39 PM] 2020/12/11 23:22:39 background imports cache refresh starting
+
+[Info  - 11:22:39 PM] 2020/12/11 23:22:39 background refresh finished after 69.55484ms
+
+[Info  - 11:24:33 PM] 2020/12/11 23:24:33 go/packages.Load
+	snapshot=117
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:24:33 PM] 2020/12/11 23:24:33 go/packages.Load
+	snapshot=118
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:24:33 PM] 2020/12/11 23:24:33 go/packages.Load
+	snapshot=118
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go]
+	packages=2
+
+[Info  - 11:24:33 PM] 2020/12/11 23:24:33 go/packages.Load
+	snapshot=118
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:24:33 PM] 2020/12/11 23:24:33 go/packages.Load
+	snapshot=118
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:24:33 PM] 2020/12/11 23:24:33 command-line-arguments [command-line-arguments.test]: no dep handle for github.com/fatih/color: no metadata for github.com/fatih/color
+	snapshot=118
+
+[Error - 11:24:33 PM] 2020/12/11 23:24:33 command-line-arguments [command-line-arguments.test]: no dep handle for rsc.io/quote: no metadata for rsc.io/quote
+	snapshot=118
+
+[Info  - 11:24:34 PM] 2020/12/11 23:24:34 go/packages.Load
+	snapshot=118
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+
+[Info  - 11:24:34 PM] 2020/12/11 23:24:34 go/packages.Load
+	snapshot=118
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go]
+	packages=1
+
+[Info  - 11:24:34 PM] 2020/12/11 23:24:34 go/packages.Load
+	snapshot=118
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Info  - 11:24:34 PM] 2020/12/11 23:24:34 go/packages.Load
+	snapshot=118
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+	packages=1
+
+[Error - 11:24:48 PM] 2020/12/11 23:24:48 command-line-arguments [command-line-arguments.test]: no dep handle for rsc.io/quote: no metadata for rsc.io/quote
+	snapshot=119
+
+[Error - 11:24:48 PM] 2020/12/11 23:24:48 command-line-arguments [command-line-arguments.test]: no dep handle for github.com/fatih/color: no metadata for github.com/fatih/color
+	snapshot=119
+
+[Info  - 11:25:16 PM] 2020/12/11 23:25:16 background imports cache refresh starting
+
+[Info  - 11:25:16 PM] 2020/12/11 23:25:16 background refresh finished after 61.35263ms
+
+[Info  - 11:25:34 PM] 2020/12/11 23:25:34 go/packages.Load
+	snapshot=120
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:25:34 PM] 2020/12/11 23:25:34 go/packages.Load
+	snapshot=120
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/mymodtest/just_test.go file=/Users/vishal/go-code/mymodtest/modex.go]
+	packages=2
+
+[Info  - 11:25:34 PM] 2020/12/11 23:25:34 go/packages.Load
+	snapshot=120
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/mymodtest/modex.go]
+
+[Info  - 11:25:34 PM] 2020/12/11 23:25:34 go/packages.Load
+	snapshot=120
+	package_path="/Users/vishal/go-code/mymodtest/just_test.go"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:25:34 PM] 2020/12/11 23:25:34 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=120
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:25:48 PM] 2020/12/11 23:25:48 go/packages.Load
+	snapshot=120
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:25:48 PM] 2020/12/11 23:25:48 go/packages.Load
+	snapshot=121
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:25:48 PM] 2020/12/11 23:25:48 go/packages.Load
+	snapshot=121
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=121
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go file=/Users/vishal/go-code/mymodtest/modex.go]
+	packages=2
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=121
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Error - 11:25:49 PM] 2020/12/11 23:25:49 /Users/vishal/go-code/mymodtest/just_test.go: no dep handle for github.com/fatih/color: no metadata for github.com/fatih/color
+	snapshot=121
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=121
+	package_path="/Users/vishal/go-code/mymodtest/just_test.go"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:25:49 PM] 2020/12/11 23:25:49 /Users/vishal/go-code/mymodtest/just_test.go: no dep handle for rsc.io/quote: no metadata for rsc.io/quote
+	snapshot=121
+
+[Error - 11:25:49 PM] 2020/12/11 23:25:49 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=121
+	directory=file:///Users/vishal/go-code
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=121
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go file=/Users/vishal/go-code/mymodtest/modex.go]
+	packages=2
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=121
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_nofly.go]
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=121
+	package_path="/Users/vishal/go-code/mymodtest/just_test.go"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=122
+	directory=/Users/vishal/go-code
+	query=[./]
+	packages=1
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=122
+	directory=/Users/vishal/go-code
+	query=[file=/Users/vishal/go-code/design-patterns/strategy/duck_type.go file=/Users/vishal/go-code/design-patterns/strategy/fly_behavior.go file=/Users/vishal/go-code/mymodtest/just_test.go file=/Users/vishal/go-code/mymodtest/modex.go]
+	packages=2
+
+[Info  - 11:25:49 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=122
+	package_path="/Users/vishal/go-code/mymodtest/just_test.go"
+	files=[/Users/vishal/go-code/mymodtest/just_test.go]
+
+[Error - 11:25:49 PM] 2020/12/11 23:25:49 /Users/vishal/go-code/mymodtest/just_test.go: no dep handle for github.com/fatih/color: no metadata for github.com/fatih/color
+	snapshot=122
+
+[Error - 11:25:49 PM] 2020/12/11 23:25:49 /Users/vishal/go-code/mymodtest/just_test.go: no dep handle for rsc.io/quote: no metadata for rsc.io/quote
+	snapshot=122
+
+[Info  - 11:25:50 PM] 2020/12/11 23:25:49 go/packages.Load
+	snapshot=122
+	package_path="command-line-arguments"
+	files=[/Users/vishal/go-code/design-patterns/strategy/duck_type.go]
+
+[Error - 11:25:50 PM] 2020/12/11 23:25:50 errors diagnosing workspace: no metadata for command-line-arguments [command-line-arguments.test]
+	snapshot=122
+	directory=file:///Users/vishal/go-code
+
